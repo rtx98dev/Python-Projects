@@ -162,7 +162,7 @@ class Environment:
 
 
 # Visualizer class
-class  Visualizer:
+class Visualizer:
     def __init__(self):
         self.fig, self.ax = plt.subplots(figsize=(6, 6))
         self.ax.set_xlim(0, GRID_SIZE)
@@ -214,7 +214,7 @@ vis = Visualizer()
 
 # Initial visualization
 vis.draw_environment(env)
-plt.show(block=False)
+plt.show(block=True)
 
 # Run Graph BFS
 goal_reached = False
